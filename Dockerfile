@@ -1,5 +1,10 @@
 FROM php:fpm
 
+RUN apt-get update && apt-get install -y \
+    libzip-dev \
+    zip \
+    && docker-php-ext-install zip
+
 COPY archivarix /var/www/html
 
 RUN chown -R www-data:www-data /var/www/html && \
