@@ -14,9 +14,7 @@ project/
 ├── .github/
 │   └── workflows/
 │       └── docker-image.yml   # CI/CD configuration file
-├── nginx.conf                 # Nginx configuration file
 ├── Dockerfile                 # Dockerfile for building the image based on php-fpm
-├── docker-compose.yml         # File for launching containers with Docker Compose
 └── README.md                  # Project description file
 ```
 
@@ -25,27 +23,17 @@ project/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/devflex-pro/archivarix-cms.git
 cd your-repository-name
 ```
 
-### 2. Run the Project Locally
-
-Use `docker-compose` to run the application locally:
-
-```bash
-docker-compose up -d
-```
-
-Once the containers are up and running, the application will be accessible at `http://localhost:8080`.
-
-### 3. Build and Run the Docker Container Manually
+### 2. Build and Run the Docker Container Manually
 
 If you want to build and run the Docker container manually:
 
 ```bash
-docker build -t your-dockerhub-username/archivarix-cms:latest .
-docker run -p 8080:80 your-dockerhub-username/archivarix-cms:latest
+docker build -t devflexpro/archivarix-cms:latest .
+docker run -p 8080:80 devflexpro/archivarix-cms:latest
 ```
 
 ### 4. CI/CD Setup
