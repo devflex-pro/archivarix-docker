@@ -10,8 +10,6 @@ fi
 
 DOCKER_COMPOSE_FILE="docker-compose.yml"
 
-mkdir -p ./www/$DOMAIN
-
 
 if grep -q "archivarix_$DOMAIN" "$DOCKER_COMPOSE_FILE"; then
     echo "Archivarix service for $DOMAIN already exists in the Docker Compose file."
