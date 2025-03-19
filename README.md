@@ -4,7 +4,7 @@
 
 ## Description
 
-This repository contains a Docker image for Archivarix CMS, designed for deployment using `php:fpm` and Nginx. It also includes GitHub Actions to automate the building and publishing of Docker images to Docker Hub on every push to the main branch or when a new tag is created.
+This repository contains a Docker image for [Archivarix CMS](https://archivarix.com/ru/?ref=4dFGW8KF), designed for deployment using `php:fpm` and Nginx. It also includes GitHub Actions to automate the building and publishing of Docker images to Docker Hub on every push to the main branch or when a new tag is created.
 
 ## Project Structure
 
